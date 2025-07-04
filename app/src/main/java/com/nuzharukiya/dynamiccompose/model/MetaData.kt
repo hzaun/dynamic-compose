@@ -2,7 +2,9 @@ package com.nuzharukiya.dynamiccompose.model
 
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
+import com.google.gson.annotations.JsonAdapter
 import com.nuzharukiya.dynamiccompose.ui.utils.ACTION_TYPE
+import com.nuzharukiya.dynamiccompose.utils.DpAdapter
 
 /**
  * @author Nuzha Rukiya <r.nuzha@gmail.com>
@@ -33,6 +35,7 @@ data class ConstraintLink(
 data class Link(
     val item: String,
     val constraint: CONSTRAINT_OPTIONS,
+    @JsonAdapter(DpAdapter::class)
     val margin: Dp = 0.dp
 )
 

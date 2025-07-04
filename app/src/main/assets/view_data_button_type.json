@@ -1,0 +1,37 @@
+[
+  {
+    "id": "b1",
+    "text": "Text 1",
+    "backgroundColor": "#d2acf5",
+    "textColor": "#ffffff",
+    "viewType": "BUTTON",
+    "constraintLinks": {
+      "left": {
+        "target": "parent",
+        "anchor": "LEFT"
+      },
+      "top": {
+        "target": "parent",
+        "anchor": "TOP"
+      }
+    }
+  },
+  {
+    "id": "b2",
+    "text": "Text 2",
+    "backgroundColor": "#0095ff",
+    "textColor": "#ffffff",
+    "viewType": "BUTTON",
+    "constraintLinks": {
+      "left": {
+        "target": "b1",
+        "anchor": "RIGHT",
+        "margin": 16
+      },
+      "top": {
+        "target": "b1",
+        "anchor": "TOP"
+      }
+    }
+  }
+]
