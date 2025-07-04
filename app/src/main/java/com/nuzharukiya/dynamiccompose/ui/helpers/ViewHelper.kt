@@ -1,5 +1,6 @@
 package com.nuzharukiya.dynamiccompose.ui.helpers
 
+import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import androidx.constraintlayout.compose.ConstrainedLayoutReference
 import androidx.constraintlayout.compose.ConstraintLayoutBaseScope
@@ -20,7 +21,7 @@ object ViewHelper {
         dataId: String? = null,
         text: String? = null,
         typography: TYPOGRAPHY? = null,
-        padding: Int = 0,
+        padding: Dp = 0.dp,
         backgroundColor: String = "#ffffff",
         textColor: String = "#000000",
         viewType: VIEW_TYPE = VIEW_TYPE.BUTTON,
@@ -28,11 +29,10 @@ object ViewHelper {
         constraintLinks: ConstraintLink = ConstraintLink(),
         children: List<Compose>? = null
     ): Compose {
-        val pad = padding.dp
 
         val meta = MetaData(
             metaDataId,
-            pad,
+            padding,
             backgroundColor,
             textColor,
             typography,
